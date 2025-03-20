@@ -1,0 +1,158 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    scroll-behavior: smooth;
+}
+
+/* Section Styling */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Hero Section */
+#hero {
+    height: 105vh;
+    background: lightblue;
+}
+
+#hero h1 {
+    font-size: 5rem;
+    max-width: 80%;
+    font-weight: bold;
+}
+
+#hero .blue {
+    color: #0057b7;
+}
+
+#hero .yellow {
+    color: #ffcc00;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 70%;
+}
+
+/* Presentation Section */
+#presentation {
+    height: auto;
+    padding: 0;
+    background: lightyellow; /* Темно-сірий фон */
+}
+
+#presentation h2 {
+    font-size: 3.5rem;
+    color: midnightblue;
+    margin: 1%;
+}
+#presentation p {
+    font-size: 1rem;
+    color: midnightblue;
+}
+
+#slider {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+}
+
+#slide-image {
+    width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.nav-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.funds {
+    height: auto;
+    background: aliceblue;
+    font-size: 2.4rem;
+    color: midnightblue;
+
+}
+.funds h3 {
+    margin: 1%;
+    font-size: 1.6rem;
+    color: black;
+
+}
+
+
+.fund-card p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+    margin: 1%;
+}
+.funds-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 80%;
+    margin: 1%;
+}
+
+.fund-card {
+    background: lightgoldenrodyellow;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 40%;
+    min-width: 300px;
+    text-align: left;
+    margin: 1%;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px;
+    background: #0057b7;
+    color: white;
+    text-align: center;
+}
