@@ -1,5 +1,5 @@
 ﻿const slides = [];
-for (let i = 1; i <= 68; i++) {
+for (let i = 1; i <= 63; i++) {
     slides.push(`assets/images/slide${i}.jpg`);
 }
 
