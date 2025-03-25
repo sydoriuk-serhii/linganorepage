@@ -101,10 +101,76 @@ section {
 #next {
     right: 10px;
 }
-
 .nav-button:hover {
     background: rgba(0, 0, 0, 0.8);
 }
+
+
+#photo-collage {
+    background: #fff3ad;
+    text-align: center;
+}
+
+/* Основний контейнер */
+.collage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+/* Стилі для рядків */
+.row-4, .row-3 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Непарні рядки (4 фото) */
+.row-4 img {
+    width: 24%;
+}
+
+/* Парні рядки (3 фото) */
+.row-3 img {
+    width: 32%;
+}
+
+/* Загальні стилі для фото */
+.collage img {
+    height: auto;
+    border-radius: 5%;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.collage img:hover {
+    transform: scale(1.02);
+}
+
+/* Адаптивність: планшети */
+@media (max-width: 1024px) {
+    .row-4 img {
+        width: 30%;
+    }
+
+    .row-3 img {
+        width: 45%;
+    }
+}
+
+/* Адаптивність: телефони */
+@media (max-width: 768px) {
+    .row-4 img, .row-3 img {
+        width: 45%;
+    }
+}
+
+
+
+
+
 
 
 .funds {
