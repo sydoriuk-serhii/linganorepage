@@ -31,7 +31,7 @@ section {
 }
 
 #hero h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     max-width: 80%;
     font-weight: bold;
 }
@@ -106,68 +106,76 @@ section {
 }
 
 
+
+
 #photo-collage {
     background: #fff3ad;
     text-align: center;
 }
 
+#photo-collage h2 {
+    font-size: 2.4rem;
+    color: midnightblue;
+}
+
 /* Основний контейнер */
 .collage {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-}
-
-/* Стилі для рядків */
-.row-4, .row-3 {
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
-    width: 100%;
-}
-
-/* Непарні рядки (4 фото) */
-.row-4 img {
-    width: 24%;
-}
-
-/* Парні рядки (3 фото) */
-.row-3 img {
-    width: 32%;
-}
-
-/* Загальні стилі для фото */
-.collage img {
-    height: auto;
-    border-radius: 5%;
-    padding: 5px;
-    transition: transform 0.3s ease;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .collage img:hover {
     transform: scale(1.02);
 }
 
-/* Адаптивність: планшети */
-@media (max-width: 1024px) {
-    .row-4 img {
-        width: 30%;
-    }
 
-    .row-3 img {
-        width: 45%;
-    }
+
+.brick-item:nth-child(5),
+.brick-item:nth-child(6),
+.brick-item:nth-child(7)
+{
+    flex-basis: calc(33% - 10px);
 }
 
-/* Адаптивність: телефони */
-@media (max-width: 768px) {
-    .row-4 img, .row-3 img {
-        width: 45%;
-    }
+.brick-item {
+    flex: 1 1 calc(25% - 10px);
+    min-width: 0;
 }
 
+.brick-item img {
+    border-radius: 0.7rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.hide{
+    display: none;
+}
 
+@media screen and (max-width: 800px) {
+    .hide{
+        display: block;
+    }
+    .brick-item:nth-child(4),
+    .brick-item:nth-child(5),
+    .brick-item:nth-child(9),
+    .brick-item:nth-child(10),
+    .hide
+    {
+        flex-basis: calc(49% - 10px);
+
+    }
+
+    .brick-item {
+        flex-basis: calc(33% - 10px);
+        min-width: 0;
+    }
+
+}
 
 
 
@@ -240,3 +248,4 @@ footer {
     color: white;
     text-align: center;
 }
+
