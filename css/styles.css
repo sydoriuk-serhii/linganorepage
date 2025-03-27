@@ -177,7 +177,25 @@ section {
 
 }
 
+#qr-section {
+    height: auto;
+    font-size: 1.1rem;
+    text-align: center;
+    background: aliceblue;
+    color: midnightblue;
 
+}
+
+#qr-section h2 {
+    font-size: 2.0rem;
+    margin: 1%;
+}
+
+#qr-code img {
+    margin-top: 1%;
+    width: 300px;
+    height: auto;
+}
 
 
 

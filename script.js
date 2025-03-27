@@ -54,3 +54,4 @@ nextButton.addEventListener("click", () => {
 
 // Початковий показ першого слайду
 showSlide(0);
+
